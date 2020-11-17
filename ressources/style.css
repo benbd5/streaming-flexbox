@@ -3,36 +3,79 @@
     padding: 0;
 }
 
+body {
+    background-color: #181818;
+    color: #fff;
+}
+
 /* ========== NAVBAR ========== */
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo i {
+    margin-right: 5px;
+    margin-top: 5px;
+    font-size: large;
+}
 
 .navbar {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(170, 169, 224);
+    background-color: #202020;
     padding: 15px;
 }
 
+.search {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
 .search input {
+    display: block;
     width: 500px;
     height: 25px;
+    background-color: #181818;
+    border: #202020;
+}
+
+.btn {
+    height: 25px;
+    /* padding: 2.75px; */
+    border: none;
+    /* border-color: #202020; */
+    width: 40px;
+    height: 24px;
+    background-color: rgb(134, 134, 134);
 }
 
 /* ========== MAIN ========== */
+
+.card-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .card {
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 200px;
+    margin: 25px 5px 15px 5px;
 }
 
 .video-image {
     width: auto;
-    height: 150px;
+    height: 200px;
 }
 
 figure {
     display: flex;
+    justify-content: space-between
 }
 
 figure img {
@@ -40,8 +83,60 @@ figure img {
     border-radius: 50%;
 }
 
+figure h3 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: -107px;
+}
+
+figure .card-hover {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    left: -5px;
+}
+
 figcaption {
     display: flex;
     flex-direction: column;
-    margin-left: 45px;
+    margin-left: 48px;
+}
+
+/* ========== HOVER ========== */
+
+.card-hover {
+    position: relative;
+    opacity: 0;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.card-hover i {
+    margin-left: 5px;
+}
+
+.card:hover .card-hover {
+    opacity: 1;
+}
+
+.later {
+    position: absolute;
+    display: flex;
+    left: 120px;
+    top: -200px;
+    color: #fff;
+    margin: 3px;
+    width: 60%;
+    font-size: large;
+}
+
+.later p {
+    opacity: 0;
+    display: flex;
+}
+
+.later:hover p {
+    transition: .5s ease-in;
+    opacity: 1;
 }

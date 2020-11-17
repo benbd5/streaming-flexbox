@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
     <link rel="stylesheet" href="./ressources/style.css">
 
     <title>Document</title>
@@ -15,11 +20,19 @@
     <header>
         <nav class="navbar">
             <div class="logo">
+                <i class="fab fa-youtube"></i>
                 <h1>Streaming</h1>
             </div>
-            <div class="search">
-                <input type="search" name="search" id="search" placeholder="Rechercher">
-            </div>
+            <form class="search">
+                <div class="input-search">
+                    <input type="search" name="search" id="search" placeholder="Rechercher">
+                </div>
+                <div class="btn-search">
+                    <button class="btn">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </form>
             <div class="onglet">
                 <a href="#" class="icons">
                     notifs
@@ -32,11 +45,189 @@
     </header>
 
     <main class="stream">
+
+        <!-- ========== ROW 1 ========== -->
         <section class="card-video">
             <div class="card">
-                <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                <a href="#">
+                    <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                </a>
+                <div class="card-hover">
+                    <div class="later">
+                        <p>A regarder plus tard</p>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
                 <figure><img src="./ressources/images/cameron.jpg" alt="cameron">
                     <h3>Titre de la vidéo</h3>
+                    <div class="card-hover">
+                        <div class="dot">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </figure>
+                <figcaption>
+                    <small>Auteur</small>
+                    <small>50 k vues - il y a 3 jours</small>
+                </figcaption>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                </a>
+                <div class="card-hover">
+                    <div class="later">
+                        <p>A regarder plus tard</p>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+                <figure><img src="./ressources/images/cameron.jpg" alt="cameron">
+                    <h3>Titre de la vidéo</h3>
+                    <div class="card-hover">
+                        <div class="dot">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </figure>
+                <figcaption>
+                    <small>Auteur</small>
+                    <small>50 k vues - il y a 3 jours</small>
+                </figcaption>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                </a>
+                <div class="card-hover">
+                    <div class="later">
+                        <p>A regarder plus tard</p>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+                <figure><img src="./ressources/images/cameron.jpg" alt="cameron">
+                    <h3>Titre de la vidéo</h3>
+                    <div class="card-hover">
+                        <div class="dot">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </figure>
+                <figcaption>
+                    <small>Auteur</small>
+                    <small>50 k vues - il y a 3 jours</small>
+                </figcaption>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                </a>
+                <div class="card-hover">
+                    <div class="later">
+                        <p>A regarder plus tard</p>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+                <figure><img src="./ressources/images/cameron.jpg" alt="cameron">
+                    <h3>Titre de la vidéo</h3>
+                    <div class="card-hover">
+                        <div class="dot">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </figure>
+                <figcaption>
+                    <small>Auteur</small>
+                    <small>50 k vues - il y a 3 jours</small>
+                </figcaption>
+            </div>
+
+            <!-- ========== ROW 2 ========= -->
+            <div class="card">
+                <a href="#">
+                    <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                </a>
+                <div class="card-hover">
+                    <div class="later">
+                        <p>A regarder plus tard</p>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+                <figure><img src="./ressources/images/cameron.jpg" alt="cameron">
+                    <h3>Titre de la vidéo</h3>
+                    <div class="card-hover">
+                        <div class="dot">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </figure>
+                <figcaption>
+                    <small>Auteur</small>
+                    <small>50 k vues - il y a 3 jours</small>
+                </figcaption>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                </a>
+                <div class="card-hover">
+                    <div class="later">
+                        <p>A regarder plus tard</p>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+                <figure><img src="./ressources/images/cameron.jpg" alt="cameron">
+                    <h3>Titre de la vidéo</h3>
+                    <div class="card-hover">
+                        <div class="dot">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </figure>
+                <figcaption>
+                    <small>Auteur</small>
+                    <small>50 k vues - il y a 3 jours</small>
+                </figcaption>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                </a>
+                <div class="card-hover">
+                    <div class="later">
+                        <p>A regarder plus tard</p>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+                <figure><img src="./ressources/images/cameron.jpg" alt="cameron">
+                    <h3>Titre de la vidéo</h3>
+                    <div class="card-hover">
+                        <div class="dot">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                </figure>
+                <figcaption>
+                    <small>Auteur</small>
+                    <small>50 k vues - il y a 3 jours</small>
+                </figcaption>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                </a>
+                <div class="card-hover">
+                    <div class="later">
+                        <p>A regarder plus tard</p>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                </div>
+                <figure><img src="./ressources/images/cameron.jpg" alt="cameron">
+                    <h3>Titre de la vidéo</h3>
+                    <div class="card-hover">
+                        <div class="dot">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
                 </figure>
                 <figcaption>
                     <small>Auteur</small>
