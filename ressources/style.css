@@ -52,7 +52,7 @@ body {
     background-color: rgb(134, 134, 134);
 }
 
-/* ========== MAIN ========== */
+/* ========== CARDS ========== */
 
 .card-video {
     display: flex;
@@ -62,9 +62,10 @@ body {
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    max-width: 300px;
     margin: 25px 5px 15px 5px;
 }
 
@@ -75,7 +76,8 @@ body {
 
 figure {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-left: 7px;
 }
 
 figure img {
@@ -87,7 +89,7 @@ figure h3 {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-left: -107px;
+    margin-left: -100px;
 }
 
 figure .card-hover {
@@ -100,7 +102,11 @@ figure .card-hover {
 figcaption {
     display: flex;
     flex-direction: column;
-    margin-left: 48px;
+    margin-left: 56px;
+}
+
+.time {
+    margin-right: 5px;
 }
 
 /* ========== HOVER ========== */
@@ -118,6 +124,30 @@ figcaption {
 
 .card:hover .card-hover {
     opacity: 1;
+}
+
+.card-overlay {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 75px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: all 0.1s linear;
+    height: 20px;
+    opacity: 0;
+    color: white;
+    font-size: 16px;
+    padding-top: 0px;
+    margin-right: 7px;
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+    height: 30px;
+    padding-top: 10px;
 }
 
 .later {
