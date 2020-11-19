@@ -1,0 +1,229 @@
+.video {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ========== VIDEO PRINCIPALE ==========  */
+
+.video-principale {
+    width: 80%;
+}
+
+.image-center img {
+    opacity: 0.3;
+}
+
+.image-center i {
+    position: absolute;
+    left: 520px;
+    top: 215px;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+#player {
+    width: 100%;
+    bottom: 0;
+    height: 40px;
+    background: transparent;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.slider input {
+    margin-top: -8px;
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-expand {
+    margin-right: 5px;
+}
+
+.image-center:focus-within i {
+    opacity: 0;
+}
+
+#card-principale {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 5px 15px 25px;
+    max-width: 1050px;
+    max-height: 500px;
+}
+
+#card-principale img {
+    max-height: 500px;
+}
+
+.video-image-principale {
+    width: 100%;
+    height: auto;
+}
+
+#image-video {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#image-video img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#auteur {
+    margin-left: 10px;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+}
+
+.column {
+    display: flex;
+}
+
+.like {
+    display: flex;
+    cursor: pointer;
+}
+
+.like span {
+    margin-right: 15px;
+    margin-top: -3px;
+}
+
+.fa-thumbs-up:active {
+    color: blue;
+}
+
+.fa-thumbs-down:active {
+    color: red;
+}
+
+.btn-abt {
+    background-color: white;
+    border-radius: 6px;
+    border-style: 1px black;
+    padding: 4px;
+    justify-content: right;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-abt:active {
+    box-shadow: 2px black;
+}
+
+.dessous {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 45px 15px 0px;
+}
+
+.description {
+    margin: 15px 0px 15px 0px;
+}
+
+.description h2 {
+    font-size: x-large;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+}
+
+.hr {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: grey;
+}
+
+.hr hr {
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+.card-comm {
+    display: flex;
+}
+
+.card-comm img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+
+.card-comm .name {
+    display: flex;
+    flex-direction: column;
+}
+
+.name small {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* ========== VIDEOS RIGHT ==========  */
+
+.autres-videos {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 25px;
+}
+
+.card-videos {
+    margin-bottom: 10px;
+}
+
+.card-videos a {
+    display: flex;
+}
+
+.infos-videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+    margin-top: -22px;
+}
+
+a .video-image {
+    height: 94px;
+    width: 168px;
+}
+
+.infos-videos h3 {
+    font-size: 14px;
+}
+
+.infos-videos small {
+    font-size: 13px;
+}

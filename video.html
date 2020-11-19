@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./ressources/video.css">
+    <link rel="stylesheet" href="./ressources/style.css">
+    <link rel="stylesheet" href="./ressources/mediaqueries.css">
+
+    <title>Vidéo</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./index.html">
+                    <i class="fab fa-youtube"></i>
+                    <h1>Streaming</h1>
+                </a>
+            </div>
+            <form class="search">
+                <div class="input-search">
+                    <input type="search" name="search" id="search" placeholder="Rechercher">
+                </div>
+                <div class="btn-search">
+                    <button class="btn">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="icons">
+                <div class="notification dropdown">
+                    <button class="dropbtn">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./video.html">
+                            <div class="notifs-flex">
+                                <figure><img src="./ressources/images/cameron.jpg" alt="cameron"
+                                        class="profile-image-notification"></figure>
+                                <div class="center-text-notification">
+                                    <h3>Titre de la vidéo</h3>
+                                    <span>Publié il y a 25 minutes</span>
+                                </div>
+                                <img src="./ressources/images/test.jpg" alt="" class="video-image-notification">
+                            </div>
+                        </a>
+                        <a href="./video.html">
+                            <div class="notifs-flex">
+                                <figure><img src="./ressources/images/cameron.jpg" alt="cameron"
+                                        class="profile-image-notification"></figure>
+                                <div class="center-text-notification">
+                                    <h3>Titre de la vidéo</h3>
+                                    <span>Publié il y a 25 minutes</span>
+                                </div>
+                                <img src="./ressources/images/test.jpg" alt="" class="video-image-notification">
+                            </div>
+                        </a>
+                        <a href="./video.html">
+                            <div class="notifs-flex">
+                                <figure><img src="./ressources/images/cameron.jpg" alt="cameron"
+                                        class="profile-image-notification"></figure>
+                                <div class="center-text-notification">
+                                    <h3>Titre de la vidéo</h3>
+                                    <span>Publié il y a 25 minutes</span>
+                                </div>
+                                <img src="./ressources/images/test.jpg" alt="" class="video-image-notification">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fas fa-user-circle"></i>
+                    </button>
+                    <div class="dropdown-content" id="drop-profile">
+                        <a href="dashboard.html">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboard
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            Paramètre
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-sun"></i>
+                            Thème
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Déconnexion
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="video">
+        <div class="container">
+            <div class="video-principale">
+                <div class="card" id="card-principale">
+                    <!-- <div class="image-center">
+                        <img src="./ressources/images/image-principale.jpg" alt="" class="video-image-principale">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="card-hover card-overlay" id="player">
+                        <div class="slider">
+                            <input type="range" min="1" max="100" value="00" class="slider" id="myRange">
+                            <div class="player">
+                                <div class="stats">
+                                    <i class="fas fa-pause"></i>
+                                    <i class="fas fa-volume-up"></i>
+                                    <i class="fas fa-forward"></i>
+                                </div>
+                                <div class="time">
+                                    <p>00:00/03:20</p>
+                                </div>
+                                <i class="fas fa-expand"></i>
+                            </div>
+                        </div>
+                    </div>-->
+                    <video id="video" src="http://r.myxotod.de/codepen.io/ambilight/sports.mp4" controls></video>
+                    <div id="image-video">
+                        <div class="column">
+                            <img src="./ressources/images/cameron.jpg" alt="cameron">
+                            <div class="column-infos">
+                                <h3>Titre de la vidéo</h3>
+                                <small>50 k vues - il y a 3 jours</small>
+                            </div>
+                        </div>
+                        <div class="like">
+                            <i class="fas fa-thumbs-up">
+                                <span>2k</span>
+                            </i>
+                            <span>/</span>
+                            <i class="fas fa-thumbs-down">
+                                <span>15</span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="dessous">
+                        <p id="auteur">Auteur</p>
+                        <button class="btn-abt">S'abonner</button>
+                    </div>
+                    <hr>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, pariatur velit libero,
+                            illo facilis culpa ipsam cupiditate quam harum voluptatum delectus ea corrupti dolorum
+                            cumque accusantium quisquam totam. Ipsam, aliquid!</p>
+                    </div>
+                    <div class="hr">
+                        <hr>
+                    </div>
+                    <div class="commentaire">
+                        <h2>Commentaires</h2>
+                        <form>
+                            <textarea name="" id="" cols="30" rows="10"
+                                placeholder="Réagissez en écrivant un commentaire"></textarea>
+                            <button class="btn-abt">
+                                Envoyer
+                            </button>
+                        </form>
+                        <br>
+                        <div class="hr">
+                            <hr>
+                        </div>
+                        <div class="exemple-commentaire">
+                            <div class="card-comm">
+                                <img src="./ressources/images/cameron.jpg" alt="cameron">
+                                <div class="name">
+                                    <h3>Cameron </h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae expedita a
+                                        ratione quisquam.</p>
+                                    <small>Publié il y a 17h</small>
+                                </div>
+                            </div>
+                            <div class="card-comm">
+                                <img src="./ressources/images/cameron.jpg" alt="cameron">
+                                <div class="name">
+                                    <h3>Cameron </h3>
+                                    <p>Lorem ipsum, asperiores quia tempore quis, eaque dicta, quo ullam veritatis eos
+                                        sed
+                                        magnam labore, accusamus voluptates quisquam.</p>
+                                    <small>Publié il y a 17h</small>
+                                </div>
+                            </div>
+                            <div class="card-comm">
+                                <img src="./ressources/images/cameron.jpg" alt="cameron">
+                                <div class="name">
+                                    <h3>Cameron </h3>
+                                    <p>Lorem ipsum, voluptates quisquam.</p>
+                                    <small>Publié il y a 17h</small>
+                                </div>
+                            </div>
+                            <div class="card-comm">
+                                <img src="./ressources/images/cameron.jpg" alt="cameron">
+                                <div class="name">
+                                    <h3>Cameron </h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae expedita a
+                                        ratione
+                                        eligendi modi asperiores quia quisquam.</p>
+                                    <small>Publié il y a 17h</small>
+                                </div>
+                            </div>
+                            <div class="card-comm">
+                                <img src="./ressources/images/cameron.jpg" alt="cameron">
+                                <div class="name">
+                                    <h3>Cameron </h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae expedita a
+                                        ratione
+                                        eligendi modi asperiores quia tempore quis, eaque dicta, quo ullam veritatis eos
+                                        sed
+                                        magnam labore, accusamus voluptates quisquam.</p>
+                                    <small>Publié il y a 17h</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== RIGHT VIDEOS ========== -->
+            <div class="autres-videos">
+                <div class="card-videos">
+                    <a href="./video.html">
+                        <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                        <div class="infos-videos">
+                            <h3>Titre de la vidéo</h3>
+                            <small>Auteur</small>
+                            <small>50 k vues</small>
+                            <small> il y a 3 jours</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-videos">
+                    <a href="./video.html">
+                        <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                        <div class="infos-videos">
+                            <h3>Titre de la vidéo</h3>
+                            <small>Auteur</small>
+                            <small>50 k vues</small>
+                            <small> il y a 3 jours</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-videos">
+                    <a href="./video.html">
+                        <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                        <div class="infos-videos">
+                            <h3>Titre de la vidéo</h3>
+                            <small>Auteur</small>
+                            <small>50 k vues</small>
+                            <small> il y a 3 jours</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-videos">
+                    <a href="./video.html">
+                        <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                        <div class="infos-videos">
+                            <h3>Titre de la vidéo</h3>
+                            <small>Auteur</small>
+                            <small>50 k vues</small>
+                            <small> il y a 3 jours</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-videos">
+                    <a href="./video.html">
+                        <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                        <div class="infos-videos">
+                            <h3>Titre de la vidéo</h3>
+                            <small>Auteur</small>
+                            <small>50 k vues</small>
+                            <small> il y a 3 jours</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-videos">
+                    <a href="./video.html">
+                        <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                        <div class="infos-videos">
+                            <h3>Titre de la vidéo</h3>
+                            <small>Auteur</small>
+                            <small>50 k vues</small>
+                            <small> il y a 3 jours</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-videos">
+                    <a href="./video.html">
+                        <img src="./ressources/images/test.jpg" alt="" class="video-image">
+                        <div class="infos-videos">
+                            <h3>Titre de la vidéo</h3>
+                            <small>Auteur</small>
+                            <small>50 k vues</small>
+                            <small> il y a 3 jours</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

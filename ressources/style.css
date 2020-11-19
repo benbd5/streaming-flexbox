@@ -4,8 +4,9 @@
 }
 
 body {
-    background-color: #181818;
-    color: #fff;
+    /* background-color: #181818; */
+    background-color: #f9f9f9;
+    color: black;
     font-family: 'Prompt', sans-serif;
     font-size: 14px;
 }
@@ -25,23 +26,28 @@ p {
     font-size: 14px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* ========== NAVBAR ========== */
 
-.logo {
+.logo a {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo i {
     margin-right: 5px;
-    margin-top: 5px;
     font-size: x-large;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #202020;
+    background-color: #ebebeb;
     padding: 15px;
 }
 
@@ -56,7 +62,7 @@ p {
     width: 500px;
     max-width: 500px;
     height: 25px;
-    background-color: #181818;
+    /* background-color: #181818; */
     border: #202020;
 }
 
@@ -66,8 +72,13 @@ p {
     border: none;
     /* border-color: #202020; */
     width: 40px;
-    height: 24px;
-    background-color: rgb(134, 134, 134);
+    height: 25px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:active {
+    box-shadow: 2px black;
 }
 
 .icons {
@@ -78,6 +89,7 @@ p {
 
 .fa-bell, .fa-user-circle {
     font-size: x-large;
+    color: black;
 }
 
 .fa-bell {
@@ -258,7 +270,7 @@ figcaption {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 74px;
+    bottom: 68px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
