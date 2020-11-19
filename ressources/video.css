@@ -218,6 +218,7 @@ textarea {
 a .video-image {
     height: 94px;
     width: 168px;
+    border-radius: 0;
 }
 
 .infos-videos h3 {

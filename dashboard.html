@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./ressources/style.css">
+    <link rel="stylesheet" href="./ressources/mediaqueries.css">
+
+    <title>Page principale</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./index.html">
+                    <i class="fab fa-youtube"></i>
+                    <h1>Streaming</h1>
+                </a>
+            </div>
+            <form class="search">
+                <div class="input-search">
+                    <input type="search" name="search" id="search" placeholder="Rechercher">
+                </div>
+                <div class="btn-search">
+                    <button class="btn">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="icons">
+                <div class="notification dropdown">
+                    <button class="dropbtn">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./video.html">
+                            <div class="notifs-flex">
+                                <figure><img src="./ressources/images/cameron.jpg" alt="cameron"
+                                        class="profile-image-notification"></figure>
+                                <div class="center-text-notification">
+                                    <h3>Titre de la vidéo</h3>
+                                    <span>Publié il y a 25 minutes</span>
+                                </div>
+                                <img src="./ressources/images/test.jpg" alt="" class="video-image-notification">
+                            </div>
+                        </a>
+                        <a href="./video.html">
+                            <div class="notifs-flex">
+                                <figure><img src="./ressources/images/cameron.jpg" alt="cameron"
+                                        class="profile-image-notification"></figure>
+                                <div class="center-text-notification">
+                                    <h3>Titre de la vidéo</h3>
+                                    <span>Publié il y a 25 minutes</span>
+                                </div>
+                                <img src="./ressources/images/test.jpg" alt="" class="video-image-notification">
+                            </div>
+                        </a>
+                        <a href="./video.html">
+                            <div class="notifs-flex">
+                                <figure><img src="./ressources/images/cameron.jpg" alt="cameron"
+                                        class="profile-image-notification"></figure>
+                                <div class="center-text-notification">
+                                    <h3>Titre de la vidéo</h3>
+                                    <span>Publié il y a 25 minutes</span>
+                                </div>
+                                <img src="./ressources/images/test.jpg" alt="" class="video-image-notification">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fas fa-user-circle"></i>
+                    </button>
+                    <div class="dropdown-content" id="drop-profile">
+                        <a href="dashboard.html">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboard
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            Paramètre
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-sun"></i>
+                            Thème
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Déconnexion
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
