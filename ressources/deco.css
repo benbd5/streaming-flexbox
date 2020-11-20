@@ -1,0 +1,70 @@
+/* ========== DECONNEXION ========== */
+
+body {
+    /* display: flex;
+    flex-direction: column;
+    height: 100vh; */
+}
+
+.deco, .connexion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+}
+
+.card-deco, .card-connexion {
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.deco h4, .connexion h4 {
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+.deco a, .connexion p a {
+    font-style: italic;
+}
+
+/* ===== CONNEXION ===== */
+
+.connexion {
+    display: flex;
+}
+
+.card-connexion form {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.btn-connexion {
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 6px;
+    border-style: 1px black;
+    padding: 4px;
+    justify-content: right;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* TEST SVG 
+
+.accueil {
+    height: 55vh;
+    width: 100%;
+    background-color: #DCF0FF;
+}
+
+.fond {
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    display: block;
+    width: 100%;
+}*/
